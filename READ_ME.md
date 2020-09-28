@@ -4,7 +4,7 @@ pip freeze >requirements.txt
 ```` 
 根据依赖文件安装依赖
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple 
 ````
 pip更换源
 ```bash

@@ -23,8 +23,9 @@ def get_logger(logger_name):
     )
     console_handler.setFormatter(console_formatter)
 
-    logger = logging.getLogger('logger_name')
-    logger.setLevel(logging.DEBUG)
+    logger = logging.getLogger(logger_name)
+    logger.setLevel(logging.INFO)
+    # logger.setLevel(logging.DEBUG)
     # 重复日志问题：
     # 1、防止多次addHandler；
     # 2、loggername 保证每次添加的时候不一样；
@@ -34,3 +35,8 @@ def get_logger(logger_name):
 
     console_handler.close()
     return logger
+
+
+if __name__ == '__main__':
+    logger = get_logger('test')
+    logger.debug('test')
