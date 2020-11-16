@@ -1,13 +1,14 @@
 import rediscluster
 
+host = "192.168.9.241"
 conn = rediscluster.RedisCluster(
     startup_nodes=[
-        {"host": "192.168.3.165", "port": "7000"},
-        {"host": "192.168.3.165", "port": "8001"},
-        {"host": "192.168.3.165", "port": "9000"},
-        {"host": "192.168.3.165", "port": "9001"},
-        {"host": "192.168.3.165", "port": "7001"},
-        {"host": "192.168.3.165", "port": "8000"}
+        {"host": host, "port": "7000"},
+        {"host": host, "port": "8001"},
+        {"host": host, "port": "9000"},
+        {"host": host, "port": "9001"},
+        {"host": host, "port": "7001"},
+        {"host": host, "port": "8000"}
     ],
     decode_responses=True)
 

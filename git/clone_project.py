@@ -1,10 +1,8 @@
 import git
 import os
 
-git_path = 'git@git.odianyun.local:baseline/web/ouser-fliter.git'
-git_version = '2.9.0'
-soft = 'idea'
-# soft = 'webstorm'
+git_path = 'git@git.odianyun.local:baseline/web/ouser.git'
+git_version = '2.9.3-wly'
 
 detail_path = git_path.replace('git@git.odianyun.local:', '').replace('.git', '')
 
@@ -31,4 +29,4 @@ try:
         repo.git.checkout(tag_name)
 except Exception:
     pass
-print(soft + ' ' + real_path)
+print('done')

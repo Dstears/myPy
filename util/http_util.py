@@ -22,7 +22,7 @@ class HttpGet(object):
 
     def execute(self):
         self.logging.debug('httpGet请求：%s' % self.url)
-        self.resp = requests.get(self.url)
+        self.resp = requests.get(self.url, timeout=5)
 
     def get_json(self):
         return self.resp.json()

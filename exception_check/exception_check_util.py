@@ -1,4 +1,5 @@
 import util
+import requests
 
 pool_map = [
     {'ip': '192.168.3.165', 'port': '2131', 'domain': 'agent-web'},
@@ -44,7 +45,10 @@ for i in pool_map:
         testBusinessException = util.HttpGet(
             'http://' + i['ip'] + ':' + i['port'] + '/' + i[
                 'domain'] + '/cloud/testExceptionService/testExceptionControllerAdvice')
-        testBusinessException.execute()
+        try:
+            testBusinessException.execute()
+        except requests.exceptions.ReadTimeout:
+            print('     timeOut')
         text = testBusinessException.get_text()
         print(' soa')
         if not text.__contains__('999999'):
