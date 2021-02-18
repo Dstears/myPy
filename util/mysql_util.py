@@ -65,7 +65,8 @@ class MysqlApi(object):
 
 
 def get_default_mysql_api():
-    return MysqlApi(_host='127.0.0.1', _port=3306, _user='root', _passwd='buxing123', _db='wxl', _charset='utf8')
+    return MysqlApi(_host='127.0.0.1', _port=3306, _user='root', _passwd='vBs2XYChmYr]CX', _db='mbiscuit',
+                    _charset='utf8')
 
 
 if __name__ == '__main__':

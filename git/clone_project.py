@@ -1,8 +1,8 @@
 import git
 import os
 
-git_path = 'git@git.odianyun.local:baseline/web/ouser.git'
-git_version = '2.9.3-wly'
+git_path = 'git@git.odianyun.local:baseline/war/oms-api.git'
+git_version = '2.9.6'
 
 detail_path = git_path.replace('git@git.odianyun.local:', '').replace('.git', '')
 

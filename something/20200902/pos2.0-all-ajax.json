@@ -1,0 +1,598 @@
+{
+  "arOffinePaymentVoucher": {
+    "queryMerchantAccountInfo": {
+      "url": "/back-finance-web/arOffinePaymentVoucher/queryMerchantAccountInfo.do",
+      "method": "post",
+      "responseType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "queryArOffineOrderList": {
+      "url": "/back-finance-web/arOffinePaymentVoucher/queryArOffineOrderList.do",
+      "method": "post",
+      "responseType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "selectFileList": {
+      "url": "/back-finance-web/baseAttachFile/selectFileList.do",
+      "method": "post",
+      "responseType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "insertArPaymentVoucher": {
+      "url": "/back-finance-web/arOffinePaymentVoucher/insertArPaymentVoucher.do",
+      "method": "post",
+      "responseType": "application/x-www-form-urlencoded",
+      "showError": true
+    }
+  },
+  "baseAttachFile": {
+    "createFile": {
+      "url": "/back-finance-web/baseAttachFile/createFile.do",
+      "method": "post",
+      "responseType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "selectFileList": {
+      "url": "/back-finance-web/baseAttachFile/selectFileList.do",
+      "method": "post",
+      "responseType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "deleteFile": {
+      "url": "/back-finance-web/baseAttachFile/deleteFile.do",
+      "method": "post",
+      "responseType": "application/x-www-form-urlencoded",
+      "showError": true
+    }
+  },
+  "batchStrategy": {
+    "getAttr": {
+      "url": "back-product-web/back/stock/batchStrategy/get.do",
+      "method": "post",
+      "showError": true
+    }
+  },
+  "board": {
+    "tradeAnalysisRealTime": {
+      "url": "obi-web/board/tradeAnalysisRealTime.do",
+      "method": "post",
+      "showError": true
+    }
+  },
+  "cart": {
+    "addItem": {
+      "url": "frontier-trade-web/openApi/cart/addItem",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "list": {
+      "url": "frontier-trade-web/openApi/cart/list",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "editItemNum": {
+      "url": "frontier-trade-web/openApi/cart/editItemNum",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "clear": {
+      "url": "frontier-trade-web/openApi/cart/clear",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "removeItemBatch": {
+      "url": "frontier-trade-web/openApi/cart/removeItemBatch",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "listCacheItem": {
+      "url": "frontier-trade-web/openApi/cart/listCacheItem",
+      "method": "get",
+      "params": {},
+      "showError": true
+    },
+    "cacheItem": {
+      "url": "frontier-trade-web/openApi/cart/cacheItem",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "addItemFromCache": {
+      "url": "frontier-trade-web/openApi/cart/addItemFromCache",
+      "method": "post",
+      "showError": true
+    },
+    "clearCache": {
+      "url": "frontier-trade-web/openApi/cart/clearCache",
+      "method": "post",
+      "showError": true
+    },
+    "addUserInput": {
+      "url": "frontier-trade-web/openApi/cart/addUserInput",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    }
+  },
+  "cashier": {
+    "createPay": {
+      "url": "/frontier-trade-web/openApi/cashier/createPay",
+      "method": "post",
+      "params": {},
+      "showError": true
+    }
+  },
+  "category": {
+    "getRootCategoryWithNologin": {
+      "url": "back-product-web2/extra/category/getRootCategoryWithNologin.do",
+      "method": "post",
+      "showError": true
+    },
+    "listChildrenCategoryWithNologin": {
+      "url": "back-product-web2/extra/category/listChildrenCategoryWithNologin.do",
+      "method": "post",
+      "showError": true
+    }
+  },
+  "checkout": {
+    "initOrder": {
+      "url": "frontier-trade-web/openApi/checkout/initOrder",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "showOrder": {
+      "url": "frontier-trade-web/openApi/checkout/showOrder",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "submitOrder": {
+      "url": "frontier-trade-web/openApi/checkout/submitOrder",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "saveDeliveryMode": {
+      "url": "frontier-trade-web/openApi/checkout/saveDeliveryMode",
+      "method": "post",
+      "showError": true
+    },
+    "saveSalesman": {
+      "url": "frontier-trade-web/openApi/checkout/saveSalesman",
+      "method": "post",
+      "showError": true
+    },
+    "updateAmount": {
+      "url": "frontier-trade-web/openApi/checkout/updateAmount",
+      "method": "post",
+      "showError": true
+    },
+    "getPayGateway": {
+      "url": "frontier-trade-web/openApi/checkout/getPayGateway",
+      "method": "post",
+      "showError": true
+    },
+    "savePayment": {
+      "url": "/frontier-trade-web/openApi/checkout/savePayment",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    }
+  },
+  "demo": {},
+  "employee": {
+    "queryStoreEmployeeList": {
+      "url": "/ouser-web/employee/queryStoreEmployeeList.do",
+      "method": "post",
+      "responseType": "application/x-www-form-urlencoded",
+      "showError": true
+    }
+  },
+  "fileUpload": {
+    "putStringWithForm": {
+      "url": "/api/fileUpload/putStringWithForm.do",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "putObjectWithForm": {
+      "url": "/api/fileUpload/putObjectWithForm.do",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    }
+  },
+  "function": {
+    "functions": {
+      "url": "ouser-web/function/functions.do",
+      "method": "post",
+      "params": {},
+      "showError": true
+    },
+    "platformFunctions": {
+      "url": "/ouser-web/function/platformFunctions.do",
+      "method": "post",
+      "params": {},
+      "showError": true
+    }
+  },
+  "guideUser": {
+    "searchUserList": {
+      "url": "/search/guideUser/searchUserList.do",
+      "method": "post",
+      "responseType": "application/x-www-form-urlencoded",
+      "params": {},
+      "showError": true
+    },
+    "addMember": {
+      "url": "ouser-web/mobileRegister/registerForce.do",
+      "method": "post",
+      "responseType": "application/x-www-form-urlencoded",
+      "code": 0,
+      "showError": true
+    }
+  },
+  "imBatchWarehouseRealStock": {
+    "getBatchStockList": {
+      "url": "back-product-web/back/stock/imBatchWarehouseRealStock/queryBatchStockList",
+      "method": "post",
+      "showError": true
+    }
+  },
+  "imInventoryPlan": {
+    "queryStoreOrgPageByAuth": {
+      "url": "/back-product-web/back/stock/imInventoryPlan/queryInventoryPlanList",
+      "method": "post",
+      "params": {},
+      "showError": true
+    },
+    "done": {
+      "url": "/back-product-web/back/stock/imInventoryPlan/done",
+      "method": "post",
+      "params": {},
+      "showError": true
+    },
+    "getById": {
+      "url": "/back-product-web/back/stock/imInventoryPlan/getById",
+      "method": "get",
+      "params": {},
+      "showError": true
+    },
+    "batchCancel": {
+      "url": "/back-product-web/back/stock/imInventoryPlan/batchCancel",
+      "method": "post",
+      "params": {},
+      "showError": true
+    },
+    "queryInventoryPlanDetailList": {
+      "url": "/back-product-web/back/stock/imInventoryPlan/queryInventoryPlanDetailList",
+      "method": "post",
+      "params": {},
+      "showError": true
+    },
+    "saveOrUpdate": {
+      "url": "/back-product-web/back/stock/imInventoryPlan/saveOrUpdate",
+      "method": "post",
+      "params": {},
+      "showError": true
+    },
+    "listInventoryMerchantProductPage": {
+      "url": "back-product-web/back/stock/imInventory/listInventoryMerchantProductPage.do",
+      "method": "post",
+      "showError": true
+    },
+    "listPosInventoryMerchantProductPage": {
+      "url": "/back-product-web/back/stock/imInventory/listPosInventoryMerchantProductPage.do",
+      "method": "post",
+      "showError": true
+    },
+    "queryBatchInventory": {
+      "url": "/back-product-web/back/stock/imInventoryPlan/queryBatchInventory",
+      "method": "post",
+      "showError": true
+    }
+  },
+  "imWarehouseStockBatchJournalRecord": {
+    "listPage": {
+      "url": "back-product-web/back/stock/imWarehouseStockBatchJournalRecord/listPage.do",
+      "method": "post",
+      "showError": true
+    }
+  },
+  "info": {
+    "getUserDetails": {
+      "url": "ouser-web/api/user/info/getUserDetails.do",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "update": {
+      "url": "ouser-web/api/user/info/update.do",
+      "method": "post",
+      "params": {},
+      "showError": true
+    }
+  },
+  "member": {
+    "queryMemberList": {
+      "url": "/ouser-web/member/queryMemberList",
+      "method": "post",
+      "showError": true
+    }
+  },
+  "merchantProduct": {
+    "getMerchantProductBaseInfoById": {
+      "url": "back-product-web2/extra/merchantProduct/getMerchantProductBaseInfoById.do",
+      "method": "post",
+      "showError": true
+    },
+    "getSerialProductByParam": {
+      "url": "back-product-web2/extra/merchantProduct/getSerialProductByParam.do",
+      "method": "post",
+      "showError": true
+    },
+    "getMerchantProductMediaByParam": {
+      "url": "back-product-web2/extra/merchantProduct/getMerchantProductMediaByParam.do",
+      "method": "post",
+      "showError": true
+    },
+    "queryMerchantProduct": {
+      "url": "back-product-web2/extra/merchantProduct/queryMerchantProduct.do",
+      "method": "post",
+      "showError": true
+    }
+  },
+  "mobileLogin": {
+    "checkImageForm": {
+      "url": "ouser-web/mobileLogin/checkImageForm.do",
+      "method": "get",
+      "responseType": "arraybuffer",
+      "showError": true
+    },
+    "posManagerLogin": {
+      "url": "ouser-web/mobileLogin/login.do",
+      "method": "post",
+      "showError": true
+    },
+    "posManagerLoginExit": {
+      "url": "ouser-web/mobileLogin/exit.do",
+      "method": "post",
+      "showError": true
+    }
+  },
+  "mobileRegister": {
+    "sendCaptchas": {
+      "url": "ouser-web/mobileRegister/sendCaptchas.do",
+      "method": "post",
+      "responseType": "application/x-www-form-urlencoded",
+      "showError": false
+    },
+    "modifyPasswordForm": {
+      "url": "ouser-web/mobileRegister/modifyPasswordForm.do",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    }
+  },
+  "order": {
+    "list": {
+      "url": "oms-api/order/query/list",
+      "method": "post",
+      "showError": true
+    }
+  },
+  "posOrder": {
+    "takeDeliveryGoods": {
+      "url": "/oms-api/posOrder/takeDeliveryGoods",
+      "method": "post",
+      "params": {},
+      "showError": true
+    }
+  },
+  "product": {
+    "getProductDetail": {
+      "url": "back-product-web/back/mp/product/getProductDetail.do",
+      "method": "post",
+      "showError": true
+    },
+    "listStoreProductInfoByPage": {
+      "url": "back-product-web/back/mp/product/listStoreProductInfoByPage",
+      "method": "post",
+      "showError": true
+    }
+  },
+  "query": {
+    "get": {
+      "url": "/oms-api/order/query/get",
+      "method": "post",
+      "responseType": "application/x-www-form-urlencoded",
+      "showError": true
+    }
+  },
+  "realTime": {
+    "getPriceStockList": {
+      "url": "api/realTime/getPriceStockList",
+      "method": "get",
+      "showError": true
+    }
+  },
+  "receiveRecordItem": {
+    "listMpDetails": {
+      "url": "pms-web/receiveRecordItem/listMpDetails",
+      "method": "get",
+      "showError": true
+    },
+    "getMpDetail": {
+      "url": "pms-web/receiveRecordItem/getMpDetail",
+      "method": "get",
+      "showError": true
+    },
+    "listPage": {
+      "url": "pms-web/receiveRecordItem/listPage.do",
+      "method": "post",
+      "showError": true
+    }
+  },
+  "receiveRecord": {
+    "add": {
+      "url": "pms-web/receiveRecord/add",
+      "method": "post",
+      "param": {},
+      "showError": true
+    },
+    "oneKeyAddReceive": {
+      "url": "pms-web/receiveRecord/oneKeyAddReceive",
+      "method": "post",
+      "param": {},
+      "showError": true
+    },
+    "receiveRecordList": {
+      "url": "pms-web/receiveRecord/listPage.do",
+      "method": "post",
+      "showError": true
+    },
+    "getById": {
+      "url": "pms-web/receiveRecord/getById.do",
+      "method": "get",
+      "showError": true
+    }
+  },
+  "receiveTaskItem": {
+    "listPage": {
+      "url": "pms-web/receiveTaskItem/listPage",
+      "method": "post",
+      "param": {
+        "page": 1,
+        "limit": 10,
+        "filters": {
+          "receiveCode": "202099466171169101"
+        }
+      },
+      "showError": true
+    }
+  },
+  "receiveTask": {
+    "listPage": {
+      "url": "pms-web/receiveTask/listPage",
+      "method": "post",
+      "showError": true
+    },
+    "batchCancel": {
+      "url": "pms-web/receiveTask/batchCancel",
+      "method": "post",
+      "showError": true
+    },
+    "addTaskAndDoReceive": {
+      "url": "pms-web/receiveTask/addTaskAndDoReceive",
+      "method": "post",
+      "showError": true
+    }
+  },
+  "registerMerchant": {
+    "queryDistributionByPageInfo": {
+      "url": "ouser-web/api/registerMerchant/queryDistributionByPageInfo.do",
+      "method": "post",
+      "showError": true
+    }
+  },
+  "rest": {
+    "checkMpSaleArea": {
+      "url": "search/rest/checkMpSaleArea.do",
+      "method": "get",
+      "showError": true
+    },
+    "queryMpCanSale": {
+      "url": "search/rest/queryMpCanSale",
+      "method": "get",
+      "showError": true
+    },
+    "searchList": {
+      "url": "search/rest/searchList.do",
+      "method": "get",
+      "showError": true
+    }
+  },
+  "so": {
+    "getSoPayInfo": {
+      "url": "/oms-web/so/getSoPayInfo",
+      "method": "post",
+      "params": {},
+      "showError": true
+    },
+    "getSoStatistics": {
+      "url": "/oms-web/so/getSoStatistics",
+      "method": "post",
+      "params": {
+        "filters": {}
+      },
+      "showError": true
+    }
+  },
+  "stock": {
+    "listImWarehouseStockJournalRecordByPage": {
+      "url": "back-product-web/back/stock/stock/listImWarehouseStockJournalRecordByPage.do",
+      "method": "post",
+      "showError": true
+    },
+    "queryInventoryPlanList": {
+      "url": "back-product-web/back/stock/imInventoryPlan/queryInventoryPlanList",
+      "method": "post",
+      "showError": true
+    }
+  },
+  "store": {
+    "queryStoreOrgPageByAuth": {
+      "url": "ouser-web/api/store/queryStoreOrgPageByAuth.do",
+      "method": "post",
+      "params": {},
+      "showError": true
+    }
+  },
+  "userInfo": {
+    "getDetail": {
+      "url": "crm-web/userInfo/getDetail.do",
+      "method": "post",
+      "showError": true
+    }
+  },
+  "user": {
+    "init": {
+      "url": "ouser-web/api/user/init.do",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "checkMobileCaptcha": {
+      "url": "ouser-web/api/user/checkMobileCaptcha.do",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "getUserDetails": {
+      "url": "ouser-web/api/user/info/getUserDetails.do",
+      "method": "post",
+      "contentType": "application/x-www-form-urlencoded",
+      "showError": true
+    },
+    "getRegisterCount": {
+      "url": "ouser-web/api/user/getRegisterCount.do",
+      "method": "post",
+      "params": {},
+      "showError": true
+    }
+  },
+  "warehouse": {
+    "queryStoreOrgPageByAuth": {
+      "url": "ouser-web/api/warehouse/queryPlatformAuthWarehousePage.do",
+      "method": "post",
+      "params": {},
+      "showError": true
+    }
+  }
+}
